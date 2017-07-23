@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理员登录</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+    <style type="text/css">
+        .checkCode
+        {
+            font-family:Arial;
+            font-style:italic;
+            color:rgb(17,159,142);
+            font-size:30px;
+			padding-top:1px;
+            border:0;
+			margin-right:34px;
+            letter-spacing:3px;
+            font-weight:bolder;
+            cursor:pointer;
+            width:20px;
+            height:10px;
+            line-height:10px;
+            text-align:center;
+            vertical-align:middle;
+			float:right;
+        }
+    </style>
+</head>
+<body onLoad="createCode();">
+
+	<div class="panel-lite bg">
+		<div class="thumbur">
+			<div class="icon-lock"></div>
+		</div>
+		<h4>管理员登录</h4>
+		<div class="form-group">
+			<input required="required" class="form-control"/>
+			<label class="form-label">用户名    </label>
+		</div>
+		<div class="form-group">
+			<input type="password" required="required" class="form-control"/>
+			<label class="form-label">密　码</label>
+		</div>
+		<div class="form-group">
+			<a class="checkCode" id="checkCode" onClick="createCode()"></a>
+			<input id="checkNum" required="required" class="form-control"/>
+			<label class="form-label">验证码    </label>
+		</div>
+
+		<button class="floating-btn"  onClick="validate();"><i class="icon-arrow" onClick="validate();"></i></button>
+	</div>
+
+
+</body>
+<script type="text/javascript">			
+	//验证码生成开始
+    var code="" ; //在全局 定义验证码
+    function createCode(){
+        code = "";
+        var codeLength = 4;//验证码的长度
+        var checkCode = document.getElementById("checkCode");
+        checkCode.value = "";
+        var selectChar = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R','S','T','U','V','W','X','Y','Z');
+        for(var i=0;i<codeLength;i++) {
+            var charIndex = Math.floor(Math.random()*32);
+            code +=selectChar[charIndex];
+        }
+        if(code.length != codeLength){
+            createCode();
+        }
+        document.getElementById("checkCode").innerHTML = code;
+    }
+    <!-- 验证码的生成结束 -->
+    function validate () {
+        var inputCode = document.getElementById("checkNum").value.toUpperCase();
+        if(inputCode.length <=0) {
+            alert("请输入验证码！");
+            return false;
+        }
+        else if(inputCode != code ){
+            alert("验证码输入错误！");
+            createCode();
+            return false;
+        }
+        else {
+            alert("验证码通过！");
+            return true;
+        }
+    }
+</script>
+</html>
