@@ -1,9 +1,10 @@
 .index-banner{
 height:632px;
+width:1380px;
 background:url(../image/banner_pic.png) no-repeat;
-width:100%;
 overflow: hidden;
 background-size:cover;
+border:1px solid red;
 }
 .index-banner-barrier{
 float:left;
