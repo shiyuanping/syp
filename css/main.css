@@ -1,0 +1,9 @@
+.index-banner{
+height:632px;
+background:url(../image/banner_pic.png) no-repeat;
+width:100%;
+overflow: hidden;
+background-size:cover;
+margin-top:0px;
+}
+
