@@ -1,5 +1,5 @@
 .index-banner{
-height:632px;
+height:695px;
 width:1380px;
 background:url(../image/banner_pic.png) no-repeat;
 overflow: hidden;
@@ -7,7 +7,7 @@ background-size:cover;
 }
 .index-banner-barrier{
 float:left;
-height:632px;
+height:695px;
 background:url(../image/banner_barrier.png) no-repeat;
 width:100%;
 overflow: hidden;
@@ -18,7 +18,7 @@ width:600px;
 height:280px;
 position:absolute;
 left:115px;
-top:230px;
+top:280px;
 }
 .index-banner-content-title{
 font-size:60px;
