@@ -1,14 +1,14 @@
 .index-banner{
 height:695px;
 width:1349px;
-background:url(../image/banner_pic.png) no-repeat;
+background:url(../image/banner_pic.jpg) no-repeat;
 overflow: hidden;
 background-size:cover;
 }
 .index-banner-barrier{
 float:left;
 height:695px;
-background:url(../image/banner_barrier.png) no-repeat;
+background:url(../image/1.png) no-repeat;
 width:100%;
 overflow: hidden;
 background-size:cover;
