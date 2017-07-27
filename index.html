@@ -1,51 +1,42 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>页面架构及样式布局</title>
-<link href="css/reset.css" type="text/css" rel="stylesheet" >
-<link href="css/common.css" type="text/css" rel="stylesheet" >
-<link href="css/main.css" type="text/css" rel="stylesheet" >
-<script src="css/jquery.js"></script>
+<title>皮皮</title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"  type="text/css"/>
+<script src="bootstrap/js/jquery.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/jquery.cookie.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 <head>
-<body>
-	<div class="public-header public-container">
-		<div class="public-header-logo">
-			<img src="image/logo.png" align="left">
-			<div class="logo">新世界</div>
+<body class="bg">
+<header>
+	<nav class="navbar navbar-default my-navbar">
+	  <div class="container">
+		<div class="navbar-header my-navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="background-color:#FFFFFF;">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand logo" href="#"><img src="images/1.png" width="40px" height="40px;" align="left"><span class="logo_title">卟卟鱼</></a>
 		</div>
-		<div class="public-header-user">
-			<img src="image/user.png" align="left">
-			<div class="user"><a href="#">登录</a></div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav navbar-right">
+			<li class="item"><a href="#">首页</a></li>
+			<li class="item"><a href="#">文章存档</a></li>
+			<li class="item"><a href="#">Jquery</a></li>
+			<li class="item"><a href="#">Bootstrap</a></li>
+			<li class="item"><a href="#">前端资料库</a></li>	
+		  </ul>
 		</div>
-		<div class="public-header-navbar">
-			<ul id="navbar">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">最新活动</a></li>
-				<li><a href="#">项目介绍</a></li>
-				<li><a href="#">爱心社区</a></li>
-				<li><a href="#">关于我们</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="index-banner">
-		<div class="index-banner-barrier"></div>
-		<div class="index-banner-content">
-			<div class="index-banner-content-title">Time of new life</div>
-			<div class="index-banner-content-intro">新时代，年轻的人们让我们一起<br/>  体验新生活，享受新生活</div>
-			<div class="index-banner-but"><a href="#">开始体验</a></div>
-		</div>
-	</div>
-	<div class="index-list"></div>
-	<div class="index-panel"></div>
-	<div class="public-footer"></div>
-<script>
-	$(document).ready(function(){
-		$("#navbar li").hover(function(){
-			$("#navbar a").eq($(this).index()).addClass("cur");
-		},function(){
-			$("#navbar a").eq($(this).index()).removeClass('cur');
-		})
-	
-	})
-</script>
+	  </div>
+	</nav>
+</header>
+
+  
 </body>
 </html>

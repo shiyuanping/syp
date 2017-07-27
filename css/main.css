@@ -1,45 +1,71 @@
-.index-banner{
-height:695px;
-width:1349px;
-background:url(../image/banner_pic.jpg) no-repeat;
-overflow: hidden;
-background-size:cover;
+title{
+background:url(../images/1.png) no-repeat;
 }
-.index-banner-barrier{
+.container{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+@media (min-width:768px){
+    .container{
+        width:750px;
+		padding-right:0px;
+    	padding-left:0px;
+    }
+
+}
+
+@media (min-width:992px){
+    .container{
+        width:970px;
+		padding-right:0px;
+    	padding-left:0px;
+    }
+
+}
+
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+		padding-right:0px;
+    	padding-left:0px;
+    }
+
+}
+.bg{
+background-color:rgb(236,240,241);
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	margin-left:10px;
+}
+.navbar{
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+.my-navbar{
+background-color:#000000;
+}
+.my-navbar-header{
+height:50px;
+}
+
+.logo{
+padding:0;
+padding-top:5px;
+}
+.logo_title{
+color:#FFFFFF;
+display:block;
+height:40px;
 float:left;
-height:695px;
-background:url(../image/1.png) no-repeat;
-width:100%;
-overflow: hidden;
-background-size:cover;
+font-size:22px;
+padding-left:7px;
+padding-top:14px;
+font-family:"Courier New", Courier, monospace;
 }
-.index-banner-content{
-width:600px;
-height:280px;
-position:absolute;
-left:115px;
-top:280px;
-}
-.index-banner-content-title{
-font-size:60px;
-color:#FFFFFF;
-font-weight:bold;
-}
-.index-banner-content-intro{
-font-size:21px;
-color:#FFFFFF;
-padding-left:10px;
-padding-top:10px;
-line-height:32px;
-}
-.index-banner-but a{
-width:330px;
-height:65px;
-background:url(../image/banner_button.png) no-repeat;
-text-align:center;
-font-size:30px;
-padding-top:10px;
-margin-left:10px;
-color:#FFFFFF;
-margin-top:64px;
+.item a{
+color:#FFFFFF !important;
 }
