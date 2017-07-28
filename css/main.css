@@ -37,12 +37,10 @@
 .index{
 padding-left:0;
 padding-right:0;
-border:1px solid red;
 height:auto;
 }
 .index-list{
 height:auto;
-border:1px solid blue;
 float:left;
 }
 .index-panel{
@@ -78,7 +76,7 @@ font-size:23px;
 font-weight:bold;
 color:rgb(68,68,68);
 border-bottom:1px dashed rgb(204,204,204);
-margin-bottom:18px;
+margin-bottom:20px;
 }
 .index-panel-content p{
 line-height:25px;
