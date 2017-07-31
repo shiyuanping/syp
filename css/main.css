@@ -37,12 +37,10 @@
 .index{
 padding-left:0;
 padding-right:0;
-border:1px solid red;
 height:auto;
 }
 .index-list{
 height:auto;
-border:1px solid blue;
 float:left;
 }
 .index-panel{
