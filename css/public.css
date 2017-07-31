@@ -10,6 +10,12 @@
 		padding-right:0px;
     	padding-left:0px;
     }
+	.footer-content{
+	width:350px;
+	font-size:14px;
+	color:rgb(252,252,250);
+	letter-spacing:0.8px;
+	}
 
 }
 @media (min-width:992px){
@@ -18,7 +24,12 @@
 		padding-right:0px;
     	padding-left:0px;
     }
-
+	.footer-content{
+	width:350px;
+	font-size:14px;
+	color:rgb(252,252,250);
+	letter-spacing:0.8px;
+	}
 }
 @media (min-width:1200px){
     .container{
@@ -28,6 +39,12 @@
     }
 	.index-list{
 		width:800px;
+	}
+	.footer-content{
+	width:350px;
+	font-size:14px;
+	color:rgb(252,252,250);
+	letter-spacing:0.8px;
 	}
 }
 .row {
