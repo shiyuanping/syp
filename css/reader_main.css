@@ -2,7 +2,7 @@
 * @Author: Zoe
 * @Date:   2017-12-04 18:56:02
 * @Last Modified by:   Zoe
-* @Last Modified time: 2017-12-20 11:57:14
+* @Last Modified time: 2017-12-22 11:17:49
 */
 
 body{
@@ -222,7 +222,4 @@ body{
 	height: 40%;
 	top: 30%;
 	z-index: 10002;
-}
-
-#day{color: red;
 }

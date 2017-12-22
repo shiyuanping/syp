@@ -2,7 +2,7 @@
 * @Author: Zoe
 * @Date:   2017-12-18 14:42:55
 * @Last Modified by:   Zoe
-* @Last Modified time: 2017-12-22 10:23:30
+* @Last Modified time: 2017-12-22 11:18:20
 */
 
 (function(){
@@ -119,17 +119,13 @@
 				}
 			})
 			$("#large-font").click(function(){
-				if (initFontsize>18) {
-					return;
-				}
+
 				initFontsize += 1;
 				Dom.fition_container.css("font-size",initFontsize);
 				Util.StorageSetter("font_size",initFontsize);
 			})
 			$("#small-font").click(function(){
-				if(initFontsize<12){
-					return;
-				}
+
 				initFontsize -= 1;
 				Dom.fition_container.css("font-size",initFontsize);
 				Util.StorageSetter("font_size",initFontsize);

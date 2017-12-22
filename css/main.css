@@ -44,7 +44,7 @@ height:auto;
 float:left;
 }
 .index-panel{
-height:390px;
+height:400px;
 margin-bottom:20px;
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
@@ -64,7 +64,7 @@ line-height:31px;
 color:rgb(119,119,119);
 }
 .index-panel-content{
-height:230px;
+height:243px;
 overflow:hidden;
 }
 .solve{
@@ -158,11 +158,12 @@ margin-left:100px;
 
 .footer{
 width:100%;
-height:45px;
+height:38px;
 background-color:#000000;
 }
 .footer-content{
-padding-top:13px;
-padding-left:12px;
-letter-spacing:0.8px;
+text-align: center;
+font-size: 12px;
+padding-top:10px;
+letter-spacing:0.2px;
 }
