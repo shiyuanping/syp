@@ -2,13 +2,13 @@
 * @Author: Zoe
 * @Date:   2017-10-08 15:16:54
 * @Last Modified by:   Zoe
-* @Last Modified time: 2018-01-03 15:58:06
+* @Last Modified time: 2018-01-03 16:10:52
 */
 body{
 	margin: 0;
 }
-.page-wrap{
-	width: 1080px;
+.page-wrap{	
+	min-width: 1080px;
 	background-color:#E72955;
 	padding: 70px 0;
 }
