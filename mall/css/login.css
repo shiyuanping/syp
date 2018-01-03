@@ -1,0 +1,98 @@
+/*
+* @Author: Zoe
+* @Date:   2017-10-08 15:16:54
+* @Last Modified by:   Zoe
+* @Last Modified time: 2018-01-03 15:36:10
+*/
+body{
+	margin: 0;
+}
+.page-wrap{
+	background-color:#E72955;
+	padding: 70px 0;
+}
+.admin-con{
+	position: relative;
+	margin: 0 auto;
+	width: 400px;
+	background-color: #fff;
+}
+.admin-con .admin-title{
+	text-align: center;
+	padding: 10px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #ddd;
+	color:#666;
+	font-weight: bold;
+}
+.admin-con .admin-box{
+	padding: 20px;
+}
+.admin-con .admin-item {
+	position: relative;;
+	margin-bottom: 20px;
+}
+.admin-con .admin-item .admin-label{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	bottom: 1px;
+	width: 40px;
+	line-height: 36px;
+	background: #f3f3f3;
+	font-size: 18px;
+	color: #d3d3d3;
+	text-align: center;
+	border-right: 1px solid #bdbdbd;
+}
+.admin-con .admin-item .admin-content{
+	padding: 10px 0 10px 50px;
+	width: 308px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 15px;
+	border: 1px solid #bdbdbd;
+}
+.admin-con .btn-submit{
+	display: block;
+	width: 360px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #E42D3C;
+	text-align: center;
+	padding:0;
+	cursor: pointer;
+}
+
+.nav-simple{
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.nav-simple .logo{
+	font-size: 33px;
+	font-weight: bold;
+	color:	#DC143C;
+	text-decoration: none;
+}
+.logo-text{
+	color: #333;
+	padding-left: 35px;
+	line-height: 23px;
+	font-size: 20px;
+	font: tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;  
+}
+.have-account{
+	float: right;
+	font-size: 16px;
+	color: #999;
+	margin-top: 10px;
+}
+.have-account a:link,.have-accounta:visited{
+	text-decoration: none;
+	color: #333;
+}
+.have-account a:hover,.have-accounta:active{
+	text-decoration: underline;
+}

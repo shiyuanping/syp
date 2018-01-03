@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/unslider.min.js"></script>
+
+<style>
+
+
+.banner { position: relative; overflow: auto; text-align: center;}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+</style>	
+</head>
+<body>
+<header>
+	<nav>
+		<div class="nav">
+			<div class="w">
+				<div class="user-info">
+					<div class="user not-login">
+						<span class="link"><a class="link" style="float: left;" href="login.html">登录</a></span>
+						<span class="link"><a class="link" style="float: left;" href="regist.html">注册</a></s800pan>
+					</div>
+					<span class="user login">
+		                <span class="link-text">
+		                    欢迎，
+		                    <span class="username"></span>
+		                </span>
+		                <span class="link js-logout">退出</span>
+		            </span>		
+		        </div>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a class="link" href=".html">购物车</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href=".html">我的订单</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href=".html">我的MMall</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href=".html">关于MMall</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="header">
+	    <div class="w">
+	        <a class="logo" href="./index.html">MMall</a>
+	        <div class="search-con">
+	            <input class="search-input" id="search-input" placeholder="请输入商品名称"/>
+	            <button class="btn search-btn" id="search-btn">搜索</button>
+	        </div>
+	    </div>
+	</div>
+</header>
+<section>
+	<div class="w">
+		<div class="cate-wrap" id="cateId">
+			<ul class="cate-list">
+				<li class="cate-item" v-for="a in cates">
+					<a class="link" href="">{{a.item1}}</a>
+					<a class="link" href="">{{a.item2}}</a>
+					<a class="link" href="">{{a.item3}}</a>
+					<a class="link" href="">{{a.item4}}</a>
+				</li>
+			</ul>					
+		</div>
+		<div class="slider">
+			<div class="banner" id="b04">
+			    <ul>
+			        <li><img src="image/01.jpg" alt="" width="830px" height="380px"></li>
+			        <li><img src="image/02.jpg" alt="" width="830px" height="380px"></li>
+			        <li><img src="image/03.jpg" alt="" width="830px" height="380px"></li>
+			        <li><img src="image/04.jpg" alt="" width="830px" height="380px"></li>
+			        <li><img src="image/05.jpg" alt="" width="830px" height="380px"></li>
+			    </ul>
+			    <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="arrowl.png" alt="prev" width="20" height="35"></a>
+			    <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="arrowr.png" alt="next" width="20" height="37"></a>
+			</div>
+		</div>		
+	</div>
+</section>
+<!-- <section>
+	<div class="w">
+		<div class="seckill">
+			<div class="triangle-topleft"></div>
+			<div class="sk-head">
+				<div class="box-tit">京东秒杀</div>
+				<span>总有你想不到的低价</span>
+				</div>
+				<div class="sk-timeout">当前场次<span>00:27:06</span>后结束抢购</div>	
+			</div>
+			<div class="sk-list">
+				<div class="sk-item"></div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+<script src="js/index.js"></script>
+
+<script>
+
+$(document).ready(function(e) {
+    var unslider = $('#b04').unslider({
+		dots: true
+	}),
+	data = unslider.data('unslider');
+	$('.unslider-arrow04').click(function() {
+        var fn = this.className.split(' ')[1];
+        data[fn]();
+    });
+});
+
+</script>
+</body>
+</html>

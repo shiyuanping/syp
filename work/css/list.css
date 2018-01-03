@@ -1,0 +1,77 @@
+/* CSS Document */
+.tatal{
+	width:850px;
+	height:45px;
+	line-height:45px;
+	margin:0 auto;
+	color:rgb(147,153,159);
+	padding-left:28px;
+	background-color:rgb(243,245,247);
+}
+.box{
+	width:850px;
+	height:auto;
+	margin:0 auto;
+}
+.list{
+	width:850px;
+	height:180px;
+	margin:0 auto;
+	margin-top:23px;
+	padding-left:25px;
+	border-bottom:1px solid rgb(217,221,225);
+}
+.pic{
+	width:212px;
+	height:175px;
+	float:left;
+	margin-top:6px;
+}
+.content{
+	width:565px;
+	height:160px;
+	float:left;
+	margin-left:20px;
+}
+.title{
+	width:565px;
+	height:45px;
+	line-height:45px;
+}
+.title a{
+	text-decoration:none;
+}
+.title a:hover,a:active{
+	color:#FF0000;
+}
+.tip{
+	font-size:13px;
+}
+.red{
+	font-size:16px;
+	font-weight:bold;
+	color:#FF0000;
+}
+.black{
+	font-size:16px;
+	font-weight:bold;
+}
+.numb{
+	width:565px;
+	height:43px;
+	padding-top:8px;
+	color:rgb(147,153,159);
+}
+.w{
+	padding-right:35px;
+}
+.intro{
+	width:565px;
+	height:100px;
+	line-height:22px;
+	font-size:14px;
+	color:rgb(77,85,93);
+}
+
+
+
