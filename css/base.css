@@ -1,0 +1,268 @@
+﻿.navbar {
+    background-color:black;
+    color:white;
+    height:60px;
+    border-radius:0px;
+    padding:0;
+    margin:0;
+}
+.back{
+    width:70px;
+	float:left
+}
+.back a {
+    display:block;   
+    height:58px;
+    padding-left:22px;
+    padding-top:18px;
+}
+.Link,.link{
+	float:left;
+	height:58px;
+	line-height:58px;
+	margin-left:15px;
+	font-size:15px;
+	color:rgb(237,241,242);
+}
+.link{
+	font-size:13px;
+	color:rgb(120,135,130);
+}
+.content {
+    width:100%;
+    height:600px;
+    float:left;
+}
+.left {
+    width:400px;
+    height:600px;
+    float:left;
+    overflow-y:scroll;
+    background-color:rgb(237,241,242);
+}
+.left_head{
+    width :350px;
+    height:55px;
+    margin:0 auto;
+    border-bottom:1px solid rgb(208,214,217);
+}
+.left_title {
+    line-height:55px;
+    font-size:17px;
+    font-weight:600;
+}
+.left_content{
+	width :350px;
+	margin:0 auto;
+	font-size:12px;
+	line-height:18px;
+}
+.left_content p{
+	padding:12px 0;
+}
+.content_title{
+	font-weight:bold;
+	font-size:13px;
+}
+.task{
+	width:100%;
+	height:auto;
+	background-color:rgb(208,214,217);
+	margin-top:50px;
+	padding-left:15px;
+	padding-bottom:15px;
+}
+.task p{
+	font-size:13px;
+	padding:8px 0;
+	line-height:23px;
+}
+.task_title{
+	font-weight:bold;
+	padding-top:15px;
+}
+.task span{
+	display:inline;
+	background-color:rgb(238,238,238);
+	word-break:break-all;
+}
+.task button{
+	width:350px;
+	height:30px;
+	font-size:14px;
+	color:rgb(164,134,134);
+	background:url(../why.png) no-repeat 15px center;
+	padding-left:38px;
+	background-color:#FFFFFF;
+	text-align:left;
+	margin-top:10px;
+}
+.center {
+    width:550px;
+    height:600px;
+    float:left;
+    background-color:black;
+}
+.center_head{
+	height:55px;
+}
+.center_title{
+	width:125px;
+	height:55px;
+	padding-left:30px;
+	line-height:55px;
+	font-size:13px;
+	color:#FFFFFF;
+	background-color:rgb(29,31,33);
+}
+.center_box{
+	width:100%;
+	min-height:496px;
+	background-color:rgb(29,31,33);
+}
+.center_numb{
+	width:50px;
+	min-height:498px;
+	font-size:13px;
+	color:#FFFFFF;
+	background-color:rgb(37,40,44);
+	float:left;
+}
+.center_numb span{
+	display:block;
+	width:50px;
+	height:18px;
+	font-size:12px;
+	text-align:right;
+	padding-right:12px;
+	color:#e8e8e8;
+}
+.center_content{
+	width:500px;
+	min-height:496px;
+	background-color:rgb(29,31,33);
+	float:left;
+}
+.textarea{
+	width:500px;
+	height:500px;
+	resize:none;
+	overflow-y:auto;
+	background-color:rgb(29,31,33);
+	border:none;
+	color:#FFFFFF;
+	outline:none;
+}
+.center_bottom{
+	width:550px;
+	height:50px;
+	background-color:rgb(20,25,30);
+	position:fixed;
+	bottom:0;
+}
+.reset{
+	width:122px;
+	height:30px;
+	color:#FFFFFF;
+	font-size:14px;
+	border:1px solid rgb(54,60,64);
+	background-color:rgb(20,25,30);
+	margin-top:12px;
+	margin-left:12px;
+	outline:none;
+}
+.submit{
+	width:122px;
+	height:30px;
+	color:#FFFFFF;
+	font-size:14px;
+	background-color:rgb(0,179,59);
+	float:right;
+	margin-top:12px;
+	margin-right:12px;
+	outline:none;
+}
+
+
+
+
+
+
+
+.right {
+    height:600px;
+    float:left;
+}
+
+
+
+
+.float{
+	width:50px;
+	height:60px;
+	color:#CCCCCC;
+	text-align:center;
+	font-size:13px;
+	background-color:rgb(54,60,64);
+	position:fixed;
+	top:300px;
+	right:1px;
+	z-index:999;
+}
+.floatbutton{
+	width:50px;
+	height:60px;
+	color:#CCCCCC;
+	text-align:center;
+	font-size:13px;
+	padding-top:2px;
+	background-color:rgb(54,60,64);
+	position:fixed;
+	top:300px;
+	right:1px;
+	z-index:999;
+	outline: none; 
+}
+.chapterBox{
+	width:360px;
+	height:602px;
+	position:fixed;
+	right:0;
+	display:none;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.chapterBoxSon{
+	width:380px;
+	height:100%;
+	overflow-x:hidden;
+	background-color:rgb(29,31,33)
+}
+.chapterTitle{
+	width:360px;
+	height:50px;
+	line-height:50px;
+	padding-left:25px;
+	color:rgb(237,241,242);
+	font-size:17px;
+}
+.littleTitle{
+	display:block;
+	width:360px;
+	height:45px;
+	line-height:45px;
+	color:rgb(237,241,242);
+	font-size:14px;
+	padding-left:25px;
+}
+.list li{
+	height:35px;
+}
+.list li a{
+	line-height:35px;
+	display:block;
+	color:rgb(237,241,242);
+	padding-left:45px;
+	text-decoration:none;
+}
+

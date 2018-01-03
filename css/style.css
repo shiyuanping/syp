@@ -1,0 +1,532 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td, input, textarea, hr, img, label, span, select, strong, b {
+	margin: 0px;
+	padding: 0px;
+}
+* {	
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+/** {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}*/
+fieldset, img, abbr, acronym {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+q:before, q:after {
+	content: '';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+a, img, button {
+	border: none;
+	text-decoration: none;
+}
+
+a, button {
+	text-decoration: none;
+}
+
+a, img {
+	border: none;
+	outline: none;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+body {
+	font-family: 'Microsoft YaHei',Arial, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	min-width: 1300px;
+	background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.ma {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w980 {
+	width: 980px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+/*旅游产品分类*/
+.product_sort {
+	margin: 20px;
+	margin-left: 9%;
+	width: 226px;
+	height: 460px;
+	background: #fff url(../Carousel1.jpg) no-repeat left bottom;
+	border: solid 1px #3299fd;
+	position: relative;
+	z-index: 90;
+}
+
+.product_sort .hd {
+		width: 226px;
+		background: url(../logo.png) no-repeat;
+		height: 78px;
+		line-height: 40px;
+		text-indent: 15px;
+		font-size: 15px;
+		font-family: "微软雅黑";
+		color: #fff;
+		text-align: center;
+	}
+
+.product_sort .bd {
+		padding-bottom: 10px;
+	}
+
+.logo_bottom {
+	color: #3299fd;
+	margin-top: 3px;
+}
+
+.product_sort .bd .item {
+	border-bottom: solid 1px #3299fd;
+	height: 63px;
+	position: relative;
+}
+
+.product_sort .bd .item .title {
+		width: 226px;
+		text-indent: 43px;
+		height: 30px;
+		overflow: hidden;
+		line-height: 42px;
+		font-size: 14px;
+		font-weight: bold;
+		color: #292929;
+	}
+
+.product_sort .bd .item .title a {
+			color: #3299fd;
+			position: relative;
+		}
+
+.product_sort .bd .item .title a i {
+				position: absolute;
+				background: url(../images/icon_nav.jpg) no-repeat;
+			}
+
+.product_sort .bd .item .one a i {
+		width: 19px;
+		height: 19px;
+		background-position: 0 0;
+		left: -25px;
+		top: -3px;
+	}
+
+.product_sort .bd .item .two a i {
+		width: 22px;
+		height: 20px;
+		background-position: 0 -51px;
+		left: -28px;
+		top: -5px;
+	}
+
+.product_sort .bd .item .three a i {
+		width: 31px;
+		height: 23px;
+		background-position: 0 -101px;
+		left: -34px;
+		top: -7px;
+	}
+
+.product_sort .bd .item .four a i {
+		width: 25px;
+		height: 17px;
+		background-position: 0 -156px;
+		left: -29px;
+		top: -3px;
+  }
+
+.product_sort .bd .item .five a i {
+		width: 28px;
+		height: 17px;
+		background-position: 0 -207px;
+		left: -33px;
+		top: -1px;
+	}
+.product_sort .bd .item .six a i {
+		width: 28px;
+		height: 17px;
+		background-position: 0 -259px;
+		left: -32px;
+		top: -3px;
+	}
+
+.product_sort .bd .item .seven a i {
+		width: 26px;
+		height: 20px;
+		background-position: 0 -309px;
+		left: -31px;
+		top: -6px;
+	}
+
+.product_sort .bd .item .eight a i {
+		width: 26px;
+		height: 21px;
+		background-position: 0 -360px;
+		left: -32px;
+		top: -7px;
+	}
+
+.product_sort .bd .item .list {
+		width: 210px;
+		padding-left: 15px;
+		height: 30px;
+		line-height: 30px;
+		overflow: hidden;
+	}
+
+.product_sort .bd .item .list a {
+			font-family: "Microsoft YaHei",Arial,sans-serif;
+			color: #d7d7d7;
+		}
+
+.product_sort .bd .item .list a:hover {
+				text-decoration: underline;
+			}
+
+.product_sort .bd .item .arrow {
+		font-family: "Microsoft YaHei",Arial,sans-serif;
+		font-size: 20px;
+		color: #c0d7f9;
+		position: absolute;
+		right: 10px;
+		top: 14px;
+	}
+
+.product_sort .bd .item .line {
+		position: absolute;
+		right: -2px;
+		top: 0px;
+		width: 2px;
+		height: 60px;
+		background-color: #fff;
+		z-index: 95;
+		display: none;
+	}
+
+.product_sort .bd .item .subitem {
+		display: none;
+	}
+
+.product_sort .bd .layer .line {
+	display: block;
+}
+
+.product_sort .bd .layer .arrow {
+	display: none;
+}
+
+.product_sort .bd .layer .subitem {
+	width: 731px;
+	background: #fff;
+	border: solid 1px #3299fd;
+	border-left: none;
+	font-family: "Microsoft YaHei",Arial,sans-serif;
+	position: absolute;
+	left: 227px;
+	_left: 228px;
+	top: -15px;
+	z-index: 95;
+	min-height: 60px;
+	height: auto !important;
+	height: 60px;
+	padding: 5px 10px 15px 10px;
+	display: block;
+}
+
+.product_sort .bd .layer .subitem .inner .tit {
+		font-size: 12px;
+		text-align: left;
+		border-top: 1px dashed #d7d7d7;
+		padding: 5px 0;
+	}
+
+.product_sort .bd .layer .subitem .inner .tit1 {
+		border-top: none;
+	}
+
+.product_sort .bd .layer .subitem .inner .tit .name {
+		display: block;
+		width: 90px;
+		color: #3299fd;
+		cursor: pointer;
+		float: left;
+		padding-top: 3px;
+	}
+
+.product_sort .bd .layer .subitem .inner ul {
+		overflow: hidden;
+		zoom: 1;
+		display: block;
+		margin-left: 90px;
+		width: 630px;
+	}
+
+.product_sort .bd .layer .subitem .inner ul li {
+			float: left;
+			padding: 0 8px;
+			height: 25px;
+		}
+
+.product_sort .bd .layer .subitem .inner ul li a {
+			color: #222;
+			display: block;
+			}
+
+.product_sort .bd .layer .subitem .inner ul li a:hover {
+			color: #3299fd;
+			text-decoration: underline;
+			}
+
+.pricingTable {
+	text-align: center;
+	background: #fff;
+	margin: 0 -15px;
+	box-shadow: 0 0 10px #ababab;
+	padding-bottom: 10px;
+	color: #cad0de;
+	transform: scale(1);
+	transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover {
+		transform: scale(1.05);
+		z-index: 1;
+	}
+
+.pricingTable .pricingTable-header {
+		padding: 10px 0;
+		background: #f5f6f9;
+		transition: all 0.5s ease 0s;
+	}
+
+.pricingTable:hover .pricingTable-header {
+		background: #ff9624;
+	}
+
+.pricingTable .price-value {
+		font-size: 25px;
+		color: #ff9624;
+		transition: all 0.5s ease 0s;
+	}
+
+.pricingTable .month {
+		display: block;
+		font-size: 14px;
+		color: #cad0de;
+	}
+
+.pricingTable:hover .pricingTable-header i,
+.pricingTable:hover .price-value,
+.pricingTable:hover .month {
+		color: #fff;
+	}
+
+.pricingTable .heading {
+		font-size: 24px;
+		color: #ff9624;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+}
+
+.pricingTable .pricing-content ul {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 6px;
+	}
+
+.pricingTable .pricing-content ul li {
+			line-height: 30px;
+			color: #a7a8aa;
+		}
+
+.pricingTable .pricingTable-signup a {
+		display: inline-block;
+		font-size: 10px;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 20px;
+		background: #ffa442;
+		text-transform: uppercase;
+		transition: all 0.3s ease 0s;
+	}
+
+.pricingTable .pricingTable-signup a:hover {
+			box-shadow: 0 0 10px #ffa442;
+		}
+
+.pricingTable.blue .price-value,
+.pricingTable.blue .heading {
+		color: #4b64ff;
+	}
+
+.pricingTable.blue:hover .pricingTable-header,
+.pricingTable.blue .pricingTable-signup a {
+		background: #4b64ff;
+	}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+			box-shadow: 0 0 10px #4b64ff;
+		}
+
+.pricingTable.black .price-value,
+.pricingTable.black .heading {
+		color: black;
+	}
+
+.pricingTable.black:hover .pricingTable-header,
+.pricingTable.black .pricingTable-signup a {
+		background: black;
+	}
+
+.pricingTable.black .pricingTable-signup a:hover {
+			box-shadow: 0 0 10px black;
+		}
+
+.pricingTable.red .price-value,
+.pricingTable.red .heading {
+		color: #ff4b4b;
+	}
+
+.pricingTable.red:hover .pricingTable-header,
+.pricingTable.red .pricingTable-signup a {
+		background: #ff4b4b;
+	}
+
+.pricingTable.red .pricingTable-signup a:hover {
+			box-shadow: 0 0 10px #ff4b4b;
+		}
+
+.pricingTable.green .price-value,
+.pricingTable.green .heading {
+		color: #40c952;
+	}
+
+.pricingTable.green:hover .pricingTable-header,
+.pricingTable.green .pricingTable-signup a {
+		background: #40c952;
+	}
+
+.pricingTable.green .pricingTable-signup a:hover {
+			box-shadow: 0 0 10px #40c952;
+		}
+
+.pricingTable.black:hover .price-value,
+.pricingTable.blue:hover .price-value,
+.pricingTable.red:hover .price-value,
+.pricingTable.green:hover .price-value {
+		color: #fff;
+	}
+
+.card {
+	margin: 20px 50px 20px 126px;
+	clear: both;
+	width: 200px;
+	float: left;
+}
+
+.card1 {
+	margin-left: 350px;
+	width: 200px;
+	position: absolute;
+	margin-top: 20px;
+	float: left;
+}
+
+.card2 {
+	margin-left: 575px;
+	width: 200px;
+	position: absolute;
+	margin-top: 20px;
+	float: left;
+}
+
+.card3 {
+	margin-left: 800px;
+	width: 200px;
+	position: absolute;
+	margin-top: 20px;
+	float: left;
+}
+
+.card4 {
+	margin-left: 1025px;
+	width: 200px;
+	position: absolute;
+	margin-top: 20px;
+	float: left;
+}
+.free{
+	clear:both;margin-left:126px
+}
+.free .free_subject{
+	font-size:26px;width:800px;
+}
+.free .more_subject{
+	position:absolute;right:120px;top:580px
+}
