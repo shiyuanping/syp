@@ -1,0 +1,33 @@
+﻿     .footer{
+			clear:both;
+            background-color: #000000;
+            font-family:'Microsoft YaHei';
+            color: #74777b;
+            font-size: 12px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+			height:60px;
+           
+        }
+        .footer a:link,a:visited{
+            text-decoration: none;
+            color: #74777b;
+        }
+        .footer a:hover{
+            text-decoration: none;
+            color: #74777b;
+        }
+
+        .font {
+            font-family: "microsoft yahei";
+        }
+
+        .background {
+            text-align: center;
+            overflow: hidden;
+               background: #E6E6E6;   
+        }
+           .ba{
+                 background: black;
+           }

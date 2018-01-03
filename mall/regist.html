@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册页面</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<div class="nav-simple">
+  <div class="w">
+    <a href="index.html" class="logo">MMall</a>
+    <span class="logo-text">欢迎注册</span>
+    <div class="have-account">
+    	已有账号?
+    	<a href="login.html">请登录</a>
+	</div>
+  </div>
+</div>
+<div class="page-wrap">
+	<div class="w">
+		<div class="admin-con">
+			<form class="form-signin" enctype="multipart/form-data"  method="post">
+				<div class="admin-title">用户注册</div>
+				<div class="admin-box">
+					<div class="admin-item">
+	                    <label class="admin-label" for="">
+	                        <i class="fa fa-user"></i>
+	                    </label>
+	                    <input class="admin-content" id="username" placeholder="请输入用户名" autocomplete="off">
+	                </div>
+	                <div class="admin-item">
+	                    <label class="admin-label" for="">
+	                        <i class="fa fa-lock"></i>
+	                    </label>
+	                    <input type="password" class="admin-content" id="password" placeholder="请输入密码" autocomplete="off">
+	                </div>
+	                <div class="admin-item">
+	                    <label class="admin-label" for="">
+	                        <i class="fa fa-lock"></i>
+	                    </label>
+	                    <input type="password" class="admin-content" id="passwords" placeholder="请再次输入密码" autocomplete="off">
+	                </div>
+	                <a class="btn btn-submit" id="submit">注册</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+/*
+* @Author: Zoe
+* @Date:   2017-12-28 08:45:34
+* @Last Modified by:   Zoe
+* @Last Modified time: 2017-12-29 20:24:45
+*/
+.nav{
+	background:#eee;
+	height: 30px;
+	line-height: 30px;
+}
+/*用户部分*/
+.nav .user{
+	float: left;
+}
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-right: 5px;
+}
+/*导航栏链接部分*/
+.nav .nav-list{
+	float: right;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}
+
+
+
+.header .logo{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    width: 80px;
+    height: 44px;
+    border: none;
+    background-color: #c60023;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    outline: none;
+    cursor: pointer
+}
+
+
+.cate-wrap{
+	float: left;;
+	width: 240px;
+	height: 370px;
+	background-color: #666;
+	color: #fff;
+	padding-top: 10px;
+}
+.cate-item{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 16px;
+	font-size: 15px;
+}
+.cate-item:hover{
+	background-color: #999;
+}
+.cate-item a{
+	color: #fff;
+	float: left;
+	padding-right: 10px;
+}
+
+.slider{
+	float: left;
+	margin-left: 10px;
+	height:380px;
+}
+
+/*轮播图样式*/
+.banner { position: relative; overflow: auto; text-align: center;}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+#b04 { width: 640px;}
+#b04 .dots { position: absolute; left: 0; right: 0; bottom: 20px;}
+#b04 .dots li{ 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	margin: 0 4px; 
+	text-indent: -999em; 
+	border: 2px solid #fff; 
+	border-radius: 6px; 
+	cursor: pointer; 
+	opacity: .4; 
+	-webkit-transition: background .5s, opacity .5s; 
+	-moz-transition: background .5s, opacity .5s; 
+	transition: background .5s, opacity .5s;
+}
+
+#b04 .dots li.active 
+{
+	background: #fff;
+	opacity: 1;
+}
+#b04 .arrow { position: absolute; top: 170px; padding: 10px;}
+#b04 .arrow:hover{background-color: #000;opacity: 0.7;}
+#b04 #al { left: 15px;}
+#b04 #ar { right: 15px;}
+
+/*秒杀样式*/
+.seckill{
+	height: 300px;
+	color: #fff;
+	font-size: 14px;
+	background-color: #fff;
+	margin-top: 10px;
+
+}
+.seckill .sk-head{
+	height: 55px;
+	background: url(/image/seckill_hd.png) no-repeat 0 0;
+}
+.triangle-topleft{
+    width: 0;
+    height: 0;
+    border-top: 14px solid rgb(189,3,17);
+    border-right: 14px solid transparent;
+    position: absolute;
+    top:13px;
+    left: 5px;
+}
+.box-tit{
+	font-family: fzzhengheis-el-gbregular;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40px;
+    height: 40px;
+    padding-top: 9px;
+    float: left;
+    margin-left: 40px;
+}
+.box-subtit{
+	font-size: 14px;
+	float: left;
+}
