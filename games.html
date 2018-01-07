@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>澳门银河</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/game_main.css">
+<script src="mall/js/jquery-1.11.1.min.js"></script>
+<script src="mall/js/unslider.min.js"></script>
+<script>
+(function(ns){  
+        function Scroll(element){
+              
+            var content = document.createElement("div");
+            var container = document.createElement("div");
+            var _this =this;
+            var cssText = "position: absolute; visibility:hidden; left:0; white-space:nowrap;";
+            this.element = element; 
+            this.contentWidth = 0;
+            this.stop = false;
+              
+            content.innerHTML = element.innerHTML;
+              
+            //获取元素真实宽度
+            content.style.cssText = cssText;
+            element.appendChild(content);
+            this.contentWidth = content.offsetWidth;
+              
+            content.style.cssText= "float:left;";
+            container.style.cssText = "width: " + (this.contentWidth*2) + "px; overflow:hidden";
+            container.appendChild(content);
+            container.appendChild(content.cloneNode(true));
+            element.innerHTML = "";
+            element.appendChild(container);
+              
+            container.onmouseover = function(e){
+                clearInterval(_this.timer);
+                  
+            };
+              
+            container.onmouseout = function(e){
+                _this.timer = setInterval(function(){ 
+                    _this.run();
+                },20);          
+  
+                  
+            };
+            _this.timer = setInterval(function(){ 
+                _this.run();
+            }, 20);
+        }
+          
+        Scroll.prototype = {
+              
+            run: function(){
+                  
+                var _this = this;
+                var element = _this.element;
+                  
+                element.scrollLeft = element.scrollLeft + 1;
+                  
+                if(element.scrollLeft >=  this.contentWidth ) {
+                        element.scrollLeft = 0;
+                }
+            }
+        };
+    ns.Scroll = Scroll; 
+}(window));
+window.onload=function(){
+	var sc = new Scroll(document.getElementById("scroll"));
+}
+</script>
+<style>
+ul, ol { padding: 0;}
+.banner { position: relative; overflow: auto; text-align: center;}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="public-header">
+		<div class="logo"><img src="image/nav-logo.png"></div>
+		<div class="logoRight"><img src="image/nav-text.png"></div>
+	</div>
+	<div class="index-banner banner" id="b04">
+		    <ul>
+		        <li><img src="image/banner.png"></li>
+		        <li><img src="image/banner.png"></li>
+		        <li><img src="image/banner.png"></li>
+		        <li><img src="image/banner.png"></li>
+		        <li><img src="image/banner.png"></li>
+		    </ul>
+	</div>
+	<div class="index-notice">
+		<span class="notice">最新动态:</span>
+		<div id="scroll">选择澳门威尼斯人，等于选择一份信誉的保障！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	</div>
+	<div class="index-list">
+		<div class="list-one">
+			<div class="list-item">
+				<span class="test">检测中</span>
+				<span class="href">www.12345.com</span>
+				<span class="enter">进入游戏</span>
+			</div>
+			<div class="list-item">
+				<span class="test">检测中</span>
+				<span class="href">www.12345.com</span>
+				<span class="enter">进入游戏</span>
+			</div>
+			<div class="list-item">
+				<span class="test">检测中</span>
+				<span class="href">www.12345.com</span>
+				<span class="enter">进入游戏</span>
+			</div>
+			<div class="list-item">
+				<span class="test">检测中</span>
+				<span class="href">www.12345.com</span>
+				<span class="enter">进入游戏</span>
+			</div>
+			<div class="list-item">
+				<span class="test">检测中</span>
+				<span class="href">www.12345.com</span>
+				<span class="enter">进入游戏</span>
+			</div>
+		</div>
+		<div class="index-panel">
+			<div class="QR-Code">
+				<div class="title">苹果APP下载</div>
+				<div class="pic"><img src="image/ios.png"></div>
+			</div>
+			<div class="QR-Code">
+				<div class="title">安卓APP下载</div>
+				<div class="pic"><img src="image/android.png"></div>
+			</div>
+		</div>
+		<div class="index-join">
+			<div class="join-title">
+				<div class="join-pic">
+					<img src="image/joinus.png">
+				</div>
+				<div class="join-pic">
+					<img src="image/jointext.png">
+				</div>
+			</div>
+			<div class="join-content">
+				<div class="reason">
+					<span class="reason-item">1.品牌足够权威</span>
+					<span class="reason-item">2.排名足够靠前</span>
+					<span class="reason-item">3.安全足够保障</span>
+					<span class="reason-item">4.取款足够自由</span>
+					<span class="reason-item">5.活动足够给力</span>
+				</div>
+				<div class="reason_2">
+					<span class="reason-item_2">6.资金足够安全</span>
+					<span class="reason-item_2">7.服务足够贴心</span>
+					<span class="reason-item_2">8.操作足够简单</span>
+					<span class="reason-item_2">9.游戏足够繁多</span>
+					<span class="reason-item_2">10.营业足够合法</span>
+				</div>
+				<div class="reason-text">您觉得不好请告诉我们，您觉得好请告诉您的朋友！</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="public-footer">
+		<div class="foot-item">
+			<div class="pic"><img src="image/foot-per.png"></div>
+			<span class="text">立即注册</span>
+		</div>
+		<div class="foot-item">
+			<div class="pic"><img src="image/foot-gift.png"></div>
+			<span class="text">优惠活动</span>
+		</div>
+		<div class="foot-item">
+			<div class="pic"><img src="image/foot-ios.png"></div>
+			<span class="text">APP安装</span>
+		</div>
+		<div class="foot-item">
+			<div class="pic"><img src="image/foot-online.png"></div>
+			<span class="text">在线客服</span>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+$(document).ready(function(e) {
+    var unslider04 = $('#b04').unslider({
+		dots: false
+	}),
+	data04 = unslider04.data('unslider');
+	
+	$('.unslider-arrow04').click(function() {
+        var fn = this.className.split(' ')[1];
+        data04[fn]();
+    });
+
+});
+
+
+</script>
+</html>
