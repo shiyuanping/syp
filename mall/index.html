@@ -13,8 +13,6 @@
 	<script src="js/unslider.min.js"></script>
 
 <style>
-
-
 .banner { position: relative; overflow: auto; text-align: center;}
 .banner li { list-style: none; }
 .banner ul li { float: left; }
@@ -97,53 +95,17 @@
 			<div class="sk-head">
 				<div class="box-tit">商城秒杀</div>
 				<span class="box-smtit">总有你想不到的低价 ></span>
-				<div class="sk-timeout">当前场次<span>00</span><small>:</small><span>27</span><small>:</small><span>06</span>后结束抢购</div>	
+				<div class="sk-timeout">当前场次<span id="t_h">00</span><small>:</small><span id="t_m">27</span><small>:</small><span id="t_s">06</span>后结束抢购</div>	
 			</div>
-			<div class="sk-list">
+			<div class="sk-list" id="secId">
 				<ul>
-					<li class="sk-listitem">
+					<li class="sk-listitem" v-for="item in secs">
 						<div class="sk-item">
-							<div class="sk-pic"><img src="image/sk_01.jpg"></div>
-							<div class="sk-desc">维达(Vinda) 卷纸 蓝色经典3层200g卫生纸*27卷(整箱销售)</div>
+							<div class="sk-pic"><img v-bind:src="item.pic"></div>
+							<div class="sk-desc">{{item.desc}}</div>
 							<span class="money">￥</span>
-							<span class="sk-price">73.90</span>
-							<span class="sk-cost">￥124.00</span>
-						</div>					
-					</li>
-					<li class="sk-listitem">
-						<div class="sk-item">
-							<div class="sk-pic"><img src="image/sk_01.jpg"></div>
-							<div class="sk-desc">维达(Vinda) 卷纸 蓝色经典3层200g卫生纸*27卷(整箱销售)</div>
-							<span class="money">￥</span>
-							<span class="sk-price">73.90</span>
-							<span class="sk-cost">￥124.00</span>
-						</div>					
-					</li>
-					<li class="sk-listitem">
-						<div class="sk-item">
-							<div class="sk-pic"><img src="image/sk_01.jpg"></div>
-							<div class="sk-desc">维达(Vinda) 卷纸 蓝色经典3层200g卫生纸*27卷(整箱销售)</div>
-							<span class="money">￥</span>
-							<span class="sk-price">73.90</span>
-							<span class="sk-cost">￥124.00</span>
-						</div>					
-					</li>
-					<li class="sk-listitem">
-						<div class="sk-item">
-							<div class="sk-pic"><img src="image/sk_01.jpg"></div>
-							<div class="sk-desc">维达(Vinda) 卷纸 蓝色经典3层200g卫生纸*27卷(整箱销售)</div>
-							<span class="money">￥</span>
-							<span class="sk-price">73.90</span>
-							<span class="sk-cost">￥124.00</span>
-						</div>					
-					</li>
-					<li class="sk-listitem">
-						<div class="sk-item" style="border: 0;">
-							<div class="sk-pic"><img src="image/sk_01.jpg"></div>
-							<div class="sk-desc">维达(Vinda) 卷纸 蓝色经典3层200g卫生纸*27卷(整箱销售)</div>
-							<span class="money">￥</span>
-							<span class="sk-price">73.90</span>
-							<span class="sk-cost">￥124.00</span>
+							<span class="sk-price">{{item.price}}</span>
+							<span class="sk-cost">{{item.cost}}</span>
 						</div>					
 					</li>
 				</ul>		
@@ -156,14 +118,10 @@
 					<div class="box-tit">发现好货</div>
 					<span class="box-smtit">发现品质生活 ></span>
 				</div>
-				<div class="pannel-cont">
-					<div class="good-item">
-						<div class="good-text">香阁儿粗跟短靴</div>
-						<div class="good-pic"></div>
-					</div>
-					<div class="good-item">
-						<div class="good-text">香阁儿粗跟短靴</div>
-						<div class="good-pic"></div>
+				<div class="pannel-cont" id="findId">
+					<div class="good-item" v-for="b in finds">
+						<div class="good-text">{{b.name}}</div>
+						<div class="good-pic"><img v-bind:src="b.pic"></div>
 					</div>
 				</div>
 			</div>
@@ -172,11 +130,65 @@
 					<div class="box-tit">会买专辑</div>
 					<span class="box-smtit">甄选优质好物 ></span>
 				</div>
+				<div class="pannel-cont" style="padding: 5px 20px 10px 20px;">
+					<div class="banner buybanner" id="b03">
+					    <ul>
+					        <li><img src="image/buy01.png" alt="" width="315px" height="360px"></li>
+					        <li><img src="image/buy02.png" alt="" width="315px" height="360px"></li>
+					        <li><img src="image/buy03.png" alt="" width="315px" height="360px"></li>
+					    </ul>
+					</div>
+				</div>
 			</div>
 			<div class="pannel" style="margin-right: 0">
 				<div class="pannel-head">
 					<div class="box-tit">排行榜</div>
 					<span class="box-smtit">专属你的购物指南 ></span>
+				</div>
+				<div class="pannel-cont" style="padding: 0;">
+					<div class="tab">
+						<ul>
+							<li>平板电视</li>
+							<li>休闲食品</li>
+							<li>洗发</li>
+							<li>成年奶粉</li>
+							<li>家电配件</li>
+						</ul>
+					</div>
+					<div class="tab-cont on">
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">1</span>
+							<div class="tab-desc">小米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">2</span>
+							<div class="tab-desc">小米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">3</span>
+							<div class="tab-desc">小米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>							
+					</div>
+					<div class="tab-cont">
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">5</span>
+							<div class="tab-desc">米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">2</span>
+							<div class="tab-desc">小米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>
+						<div class="tab-item">
+							<div class="tab-pic"><img src="image/tab1_01.jpg"></div>
+							<span class="tab-rank">3</span>
+							<div class="tab-desc">小米（MI）小米电视4C L55M5-AZ 55英寸 HDR 2GB+8GB 四核高性能处理器 4K超高清智能网络液晶平板电视</div>
+						</div>							
+					</div>
 				</div>
 			</div>
 		</div>
@@ -184,6 +196,8 @@
 </section>
 
 <script src="js/index.js"></script>
+<script src="js/setInterval.js"></script>
+<script src="js/tab.js"></script>
 <script>
 
 $(document).ready(function(e) {
