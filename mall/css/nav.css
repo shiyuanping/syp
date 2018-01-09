@@ -2,7 +2,7 @@
 * @Author: Zoe
 * @Date:   2017-12-28 08:45:34
 * @Last Modified by:   Zoe
-* @Last Modified time: 2018-01-08 19:48:43
+* @Last Modified time: 2018-01-09 11:36:38
 */
 .nav{
 	background:#eee;
@@ -159,7 +159,7 @@
 }
 .seckill .sk-head{
 	height: 55px;
-	background: url(/image/seckill_hd.png) no-repeat 0 0;
+	background: url(../image/seckill_hd.png) no-repeat 0 0;
 }
 .triangle-topleft{
     width: 0;
