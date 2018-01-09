@@ -2,7 +2,7 @@
 * @Author: Zoe
 * @Date:   2017-12-28 08:45:34
 * @Last Modified by:   Zoe
-* @Last Modified time: 2017-12-29 20:24:45
+* @Last Modified time: 2018-01-08 19:48:43
 */
 .nav{
 	background:#eee;
@@ -48,7 +48,6 @@
     float: left;
     width: 950px;
 }
-
 
 
 .header .logo{
@@ -152,12 +151,11 @@
 
 /*秒杀样式*/
 .seckill{
-	height: 300px;
+	height: auto;
 	color: #fff;
 	font-size: 14px;
-	background-color: #fff;
 	margin-top: 10px;
-
+	margin-bottom: 20px;
 }
 .seckill .sk-head{
 	height: 55px;
@@ -172,17 +170,122 @@
     top:13px;
     left: 5px;
 }
-.box-tit{
-	font-family: fzzhengheis-el-gbregular;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 40px;
-    height: 40px;
-    padding-top: 9px;
-    float: left;
-    margin-left: 40px;
+
+.sk-timeout{
+	float: right;
+	margin: 0 auto;
+	height: 55px;
+	line-height: 55px;
+	margin-right: 10px;
 }
-.box-subtit{
-	font-size: 14px;
+.sk-timeout span{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 3px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #f90013;
+	background-color: #440106;
+	margin-left: 3px;
+	margin-right: 3px;
+	text-align: center;
+}
+.sk-timeout span:first-child{
+	margin-left: 8px;
+}
+.sk-timeout span:last-child{
+	margin-right: 8px;
+}
+.sk-timeout small{
+	font-size: 22px;
+	font-weight: bold;
+	color: #440106;
+}
+.sk-list{
+	background-color: #fff;
+	box-sizing: border-box;
+	height: 250px;
+	padding-left: 16px;
+	padding-top: 12px;
+}
+.sk-list li{
+	display: inline-block;
+}
+.sk-list .sk-item{
+	box-sizing: border-box;
+	width: 202px;
+	height: 228px;
+	font-size: 12px;
+	padding: 15px;
+	background-color: #fff;
+	color: #999;
+	border-right: 1px solid #e7e7e7;
+}
+.sk-list .sk-item .sk-pic img{
+	margin: 0 auto;
+/*	box-shadow:0 5px 5px #666;*/
+}
+.sk-list .sk-item .sk-desc{
+	margin-top: 16px;
+	margin-bottom:10px; 
+}
+.money{
+	font-size: 12px;
+	color: #f10214;
+}
+.sk-list .sk-item .sk-price{
+	font-size: 18px;
+	font-weight: bolder;
+	color: #f10214;
+}
+.sk-list .sk-item .sk-cost{
+	font-size: 12px;
+	margin-left: 5px;
+	text-decoration: line-through;
+}
+
+.pannel:nth-child(1) .pannel-head{
+	background-image: linear-gradient(90deg,#4998a1,#2e828b);
+}
+.pannel:nth-child(2) .pannel-head{
+	background-image: linear-gradient(90deg,#76488e,#662d72);
+}
+.pannel:nth-child(3) .pannel-head{
+	background-image: linear-gradient(90deg,#e77005,#e45d04);
+}
+.pannel{
 	float: left;
+	width: 353px;
+	height: 444px;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #fff;
+}
+.pannel-head{
+	height: 55px;
+}
+.pannel .box-tit{
+	margin-left: 30px;
+}
+.pannel .box-smtit{
+	float: right;
+	margin-right: 18px;
+}
+.pannel-cont{
+	box-sizing: border-box;
+	padding: 12px;
+}
+.good-item{
+	width: 164px;
+	height: 120px;
+	color: #70a4c1;
+	float: left;
+}
+.good-text{
+	box-sizing: border-box;
+	width: 80px;
+	padding: 20px 0 0 20px;
 }
